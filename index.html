@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Oluwatosin Obisanya - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
     <nav id="desktop-nav">
-        <div  class="logo">Oluwatosin Obisanya</div>
+        <div class="logo">Oluwatosin Obisanya</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -20,7 +20,7 @@
         </div>
     </nav>
     <nav id="hamburger-nav">
-        <div  class="logo">Oluwatosin Obisanya</div>
+        <div class="logo">Oluwatosin Obisanya</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -35,285 +35,124 @@
             </div>
         </div>
     </nav>
+    
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="Tosin Obisanya profile picture">
+            <img src="./assets/profile pic 2.png" alt="Oluwatosin Obisanya profile picture" class="profile-pic">
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Oluwatosin Obisanya</h1>
-            <p class="section__text__p2">Frontend Developer</p>
+            <h1 class="title animated-name">Oluwatosin Obisanya</h1>
+            <p class="section__text__p2">Full Stack Developer</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" 
-                onclick="window.open('./assets/Obisanya Oluwatosin_CV.pdf')">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Obisanya Oluwatosin_CV.pdf')">
                     Download CV
                 </button>
-                <button class="btn btn-color-1" 
-                onclick="location.href='./#contact'">
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
                     Contact Info
                 </button>
             </div>
             <div id="socails-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn profile"
-                class="icon" onclick="location.href='https://www.linkedin.com/in/oluwatosin-obisanya-218b93280'">
-                <img src="./assets/github.png" alt="My Github profile"
-                class="icon" onclick="location.href='https://github.com/Tosin-O'">
+                <p><a href="https://www.linkedin.com/in/oluwatosin-obisanya">LinkedIn</a> | <a href="https://github.com/Tosin-O">GitHub</a></p>
             </div>
         </div>
     </section>
+
     <section id="about">
         <p class="section__text__p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
-            <div class="section__pic-container">
-                <img 
-                src="./assets/about-pic.png" 
-                alt="Profile picture"
-                class="about-pic"/>
-            </div>
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
-                        <img 
-                        src="./assets/experience.png" 
-                        alt="Experience icon"
-                        class="icon"/>
                         <h3>Experience</h3>
-                        <p>2+ years <br> Frontend Development</p>
+                        <p>3+ completed internships <br> Full Stack & Enterprise IT</p>
                     </div>
                     <div class="details-container">
-                        <img 
-                        src="./assets/education.png" 
-                        alt="Education icon"
-                        class="icon"/>
                         <h3>Education</h3>
-                        <p>B.Sc. Bachelors Degree </p>
+                        <p>B.Sc. Computer Science (Expected Dec 2026) <br> Pan-Atlantic University</p>
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>As a passionate and detail-oriented Full Stack Developer, my objective is to build responsive and intuitive user
-                        interfaces using modern frameworks like React, JavaScript, and CSS to enhance user experiences. I aim to develop and
-                        manage robust back-end systems, including RESTful APIs, JWT authentication, and database integration, while
-                        optimizing application performance and maintaining clean, secure, and maintainable code. Committed to continuous
-                        learning, I strive to stay updated with emerging technologies and industry trends. By collaborating with cross-functional
-                        teams, I seek to deliver high-quality, scalable, and innovative full-stack solutions.</p>
+                    <p>Final-year Computer Science student at Pan-Atlantic University (Second Class Upper) with multiple completed internships across full stack development and enterprise IT. I design and build features end to end, utilizing Spring Boot and PostgreSQL on the backend, alongside React and Next.js on the frontend, securely managed with JWT. Dedicated to robust system architecture, I recently designed a hybrid AHP-TOPSIS multi-criteria decision engine for a budget-aware web platform.</p>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
-        onclick="location.href='./#experience'"/>
     </section>
+
     <section id="experience">
-        <p class="section__text__p1"> Explore My</p>
-        <h1 class="title">Experience</h1>
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Technical Skills</h1>
         <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-container">
                     <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon"
-                            class="icon"/>
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon"
-                            class="icon"/>
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon"
-                            class="icon"/>
-                            <div>
-                                <h3>React</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon"
-                            class="icon"/>
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Experienced
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon"
-                            class="icon"/>
-                            <div>
-                                <h3>TypeScript</h3>
-                                <p>Intermediate
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon"
-                            class="icon"/>
-                            <div>
-                                <h3>Rust</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
+                    <div class="article-container text-only-skills">
+                        <article><h3>React.js & Next.js</h3></article>
+                        <article><h3>HTML5 & CSS3</h3></article>
+                        <article><h3>Tailwind CSS</h3></article>
+                        <article><h3>JavaScript & TypeScript</h3></article>
                     </div>
                 </div>
                 <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon"
-                            class="icon"/>
-                            <div>
-                                <h3>PostgreSQL</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon"
-                            class="icon"/>
-                            <div>
-                                <h3>Node JS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon"
-                            class="icon"/>
-                            <div>
-                                <h3>Express JS</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon"
-                            class="icon"/>
-                            <div>
-                                <h3>Git</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img 
-                            src="./assets/checkmark.png" 
-                            alt="Experience icon"
-                            class="icon"/>
-                            <div>
-                                <h3>SpringBoot
-                                <p>Experienced</p>
-                            </div>
-                        </article>
+                    <h2 class="experience-sub-title">Backend & Databases</h2>
+                    <div class="article-container text-only-skills">
+                        <article><h3>Spring Boot & Node.js</h3></article>
+                        <article><h3>PostgreSQL & MongoDB</h3></article>
+                        <article><h3>REST API & JWT</h3></article>
+                        <article><h3>Firebase & SQL</h3></article>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
-        onclick="location.href='./#projects'"/>
     </section>
+
     <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-container color-container">
-                    <div class="article-container">
-                        <img 
-                        src="./assets/project-1.png" 
-                        alt="Project 1"
-                        class="project-img"/>
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project One</h2>
+                    <h2 class="experience-sub-title project-title">Smart Meal Planner</h2>
+                    <p class="project-description">Full-stack platform generating personalized, budget-aware meal plans using a hybrid AHP-TOPSIS multi-criteria decision algorithm. Built with Next.js, Firebase, and Tailwind CSS.</p>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
-                            Live Demo
-                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Tosin-O/SmartMeal'">Github</button>
                     </div>
                 </div>
                 <div class="details-container color-container">
-                    <div class="article-container">
-                        <img 
-                        src="./assets/project-2.png" 
-                        alt="Project 2"
-                        class="project-img"/>
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project One</h2>
+                    <h2 class="experience-sub-title project-title">GConnect</h2>
+                    <p class="project-description">Social interface supporting core user interactions — posts, feeds, and live UI updates. Features a reusable component library that significantly shortens build time.</p>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
-                            Live Demo
-                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Tosin-O/csc419examproject'">Github</button>
                     </div>
                 </div>
                 <div class="details-container color-container">
-                    <div class="article-container">
-                        <img 
-                        src="./assets/project-3.png" 
-                        alt="Project 3"
-                        class="project-img"/>
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project One</h2>
+                    <h2 class="experience-sub-title project-title">Weather Application</h2>
+                    <p class="project-description">Forecasting web application consuming external weather APIs, providing dynamic UI updates and serving real-time requests with sub-2-second response times.</p>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
-                            Live Demo
-                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Tosin-O/WeatherApp'">Github</button>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
-        onclick="location.href='./#contact'"/>
     </section>
+
     <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
-                <img 
-                src="./assets/email.png" 
-                alt="Email icon"
-                class="icon contact-icon email-icon"/>
-                <p><a href="mailto:codewithtosin@gmail.com">codewithtosin@gmail.com</a></p>
+                <p><a href="mailto:oluwatosin.i.obisanya@gmail.com">oluwatosin.i.obisanya@gmail.com</a></p>
             </div>
             <div class="contact-info-container">
-                <img 
-                src="./assets/linkedin.png" 
-                alt="LinkedIn icon"
-                class="icon contact-icon"/>
-                <p><a href="https://www.linkedin.com/in/oluwatosin-obisanya-218b93280">LinkedIn</a></p>
-            </div>     
+                <p><a href="https://www.linkedin.com/in/oluwatosin-obisanya">LinkedIn</a></p>
+            </div>
+            <div class="contact-info-container">
+                <p>+234 808 937 4146</p>
+            </div>
         </div>  
     </section>
+
     <footer>
         <nav>
             <div class="nav-links-container">
@@ -325,8 +164,8 @@
                 </ul>
             </div>
         </nav>
-        <p>Copyright &#169; 2025 Oluwatosin Obisanya. All Rights Reserved.</p>
+        <p>Copyright &#169; 2026 Oluwatosin Obisanya. All Rights Reserved.</p>
     </footer>
-   <script src="script.js"></script> 
+    <script src="script.js"></script> 
 </body>
 </html>
