@@ -155,18 +155,26 @@ a:hover {
     transform: rotate(-45deg) translate(10px, -5px);
 } 
 
-/* SECTIONS */
+/* SECTIONS OVERRIDE */
 section {
-    padding-top: 4vh;
-    height: auto !important; /* Forces container to wrap contents, ignoring any fixed heights from other CSS files */
-    margin: 0 10rem;
-    min-height: fit-content;
-    box-sizing: border-box;
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+    height: auto !important; 
+    min-height: fit-content !important; 
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
     position: relative;
+    box-sizing: border-box;
 }
 
 .section-container {
     display: flex;
+    flex-wrap: wrap; 
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;    
+    width: 100%;
 }
 
 /* PROFILE SECTION */
@@ -174,26 +182,22 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* Guarantees image and text stack instead of overflowing horizontally */
-    gap: 5rem;
-    min-height: 80vh; 
-    margin-bottom: 8rem; /* Absolute guardrail gap pushing the next section down */
+    flex-wrap: wrap; 
+    gap: 4rem;
 }
 
 .section__pic-container {
     display: flex;
     height: 400px;
     width: 400px;
+    margin: auto 0;
     justify-content: center;
     align-items: center;
 }
 
-.profile-pic {
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+.section__pic-container img {
+    max-width: 100%;
+    height: auto;
 }
 
 .section__text {
@@ -248,6 +252,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -288,28 +293,28 @@ section {
 }
     
 /* ABOUT SECTION */
-#about {
-    position: relative;
-    margin-top: 5rem; /* Forces space from the profile element */
-    padding-top: 5rem;
-}
-
 .about-containers {
     gap: 2rem;
     margin-bottom: 2.5rem;
     margin-top: 2.5rem;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }
 
 .about-details-container {
     justify-content: center;
+    align-items: center; 
     flex-direction: column;
     display: flex;
+    width: 100%;
 }
 
 .details-container {
     padding: 2rem;
     flex: 1;
+    min-width: 250px;
     background: white;
     border-radius: 1.5rem;
     box-shadow: 0 10px 30px rgba(0,0,0,0.03);
@@ -327,10 +332,6 @@ section {
     color: #333;
 }
 
-.section-container {
-    gap: 4rem;
-}
-
 .text-container p {
     font-size: 1.05rem;
     text-align: center;
@@ -339,11 +340,6 @@ section {
 }
    
 /* EXPERIENCE & PROJECTS SECTIONS */
-#experience, #projects {
-    position: relative;
-    padding-top: 5vh;
-}
-
 .experience-sub-title {
     color: #333;
     font-weight: 600;
@@ -354,8 +350,10 @@ section {
 .experience-details-container {
     display: flex;
     justify-content: center;
+    align-items: center; 
     flex-direction: column;
     margin-top: 2rem;
+    width: 100%;
 }
 
 .article-container {
@@ -394,7 +392,6 @@ article h3 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 60vh;
 }
 
 .contact-info-upper-container {
@@ -423,8 +420,10 @@ article h3 {
 
 /* FOOTER SECTION */
 footer {
-    height: 15vh;
-    margin: 0 10rem;
+    padding: 3rem 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
