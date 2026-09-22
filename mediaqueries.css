@@ -1,100 +1,114 @@
-@media screen and (max-width: 1400px) {
-    #profile{
-        height: 83vh;
-        margin-bottom: 6rem;
+/* LAPTOPS & LARGE TABLETS */
+@media screen and (max-width: 1200px) {
+    #profile {
+        gap: 2rem;
     }
-    .about-containers {
-        flex-wrap: wrap;
+    .section__pic-container {
+        width: 320px;
+        height: 320px;
     }
-    
 }
 
-@media screen and (max-width: 1200px) {
-    #desktop-nav{
+/* TABLETS (Triggers Mobile Menu and Stacked Layouts) */
+@media screen and (max-width: 900px) {
+    /* Navigation Swap */
+    #desktop-nav {
         display: none;
     }
     #hamburger-nav {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 5%;
+        box-sizing: border-box;
     }
-    #experience,
-    .experience-details-container {
+
+    /* Section Tightening */
+    section {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+
+    /* Profile Stacking */
+    #profile {
+        flex-direction: column;
+        gap: 2rem;
         margin-top: 2rem;
     }
-    #profile,
-    .section-container {
-        display: block;
-    }
-    .arrow {
-        display: none;
-    }
-    section,
-    .section-container {
-        height: fit-content;
-    }
-    section {
-        margin: 0 5%;
-    }
     .section__pic-container {
-        width: 275px;
-        height: 275px;
-        margin: 0 auto 2rem;
+        width: 280px;
+        height: 280px;
+        margin: 0 auto;
     }
+    .title {
+        font-size: 2.75rem;
+    }
+
+    /* About Section & Cards */
     .about-containers {
-        margin-top: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .details-container {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    /* Contact Formatting */
+    .contact-info-upper-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 1.5rem;
+        text-align: center;
     }
 }
 
+/* MOBILE PHONES */
 @media screen and (max-width: 600px) {
-    #contact,
-    footer{
-        height: 40vh;
+    /* Scale Down Image Further */
+    .section__pic-container {
+        width: 220px;
+        height: 220px;
     }
-    #profile {
-        height: 83vh;
-        margin-bottom: 0;
+    
+    /* Typography Scaling */
+    .title {
+        font-size: 2.25rem;
     }
-    article {
-        font-size: 1rem;
-    }
-    footer nav {
-        height: fit-content;
-        margin-bottom: 2rem;
-    }
-    .about-containers,
-    .contact-info-upper-container,
-    .btn-container {
-        flex-wrap: wrap;
-    }
-    .contact-info-container {
-        margin: 0;
-    }
-    .contact-info-container p,
-    .nav-links li a {
-        font-size: 1rem;
+    .section__text__p2 {
+        font-size: 1.35rem;
     }
     .experience-sub-title {
         font-size: 1.25rem;
     }
-    .logo {
-        font-size: 1.5rem;
+    .text-container p {
+        font-size: 0.95rem;
+        padding: 0 1rem;
     }
-    .nav-links {
+
+    /* Buttons Formatting */
+    .btn-container {
         flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
+        gap: 1rem;
+        width: 100%;
+        align-items: center;
     }
-    .section__pic-container {
-        width: auto;
-        height: 46vw;
-        justify-content: center;
+    .btn {
+        width: 100%;
+        max-width: 250px;
     }
-    .section__text__p2 {
-        font-size: 1.25rem;
+
+    /* Footer adjustments */
+    footer nav .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
     }
-    .title {
-        font-size: 2rem;
-    }
-    .text-container {
-        text-align: justify;
+    
+    .contact-info-container p, .contact-info-container a {
+        font-size: 1rem;
+        word-break: break-word; /* Prevents long emails from stretching the screen */
     }
 }
